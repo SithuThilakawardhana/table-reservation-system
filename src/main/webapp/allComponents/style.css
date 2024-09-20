@@ -1,0 +1,215 @@
+/* General body styling */
+body {
+    background-color: #f4f6f9;
+    color: #001f3f; /* Navy blue */
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    margin: 0;
+    line-height: 1.6; /* Improve readability with better line height */
+}
+
+h1, h3 {
+    font-weight: bold;
+    color: #001f3f; /* Navy blue */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #001f3f; /* Navy blue */
+}
+
+a:hover {
+    color: #FF6F61; /* Soft coral for hover */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #001f3f; /* Navy blue */
+    box-shadow: 0 2px 5px rgba(0, 31, 63, 0.2); /* Navy blue shadow */
+    padding: 10px 20px;
+    border-bottom: 3px solid #0059b3; /* Lighter navy border to add style */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    font-weight: 500; /* Slightly bolder for better readability */
+}
+
+.navbar a:hover {
+    background-color: #004080; /* Lighter navy on hover */
+    border-radius: 5px; /* Adds smoother hover transitions */
+}
+
+/* Container for main content */
+.container-custom {
+    max-width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 31, 63, 0.2); /* Navy blue shadow */
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 31, 63, 0.2);
+    margin-bottom: 20px; /* Added margin to separate forms from other elements */
+}
+
+.form-control {
+    border: 1px solid #001f3f;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px; /* Space between form fields */
+}
+
+label {
+    font-weight: bold;
+    color: #001f3f;
+    margin-bottom: 5px; /* Space between label and form input */
+    display: block; /* Ensure label is always above the input field */
+}
+
+input[type="submit"], button {
+    background-color: #001f3f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Adds space between button and input fields */
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #0059b3; /* Lighter navy blue on hover */
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 31, 63, 0.2);
+    margin-bottom: 20px; /* Added margin for better spacing */
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center; /* Centered text for a cleaner look */
+    border-bottom: 1px solid #001f3f;
+}
+
+.table th {
+    background-color: #001f3f;
+    color: white;
+    font-weight: bold;
+    padding: 15px; /* Increased padding for better spacing */
+}
+
+.table td {
+    padding: 15px; /* Better spacing for table data */
+}
+
+.table tr:nth-child(even) {
+    background-color: #f4f6f9;
+}
+
+.table tr:hover {
+    background-color: #004080;
+    color: white;
+}
+
+/* Buttons */
+.btn {
+    background-color: #001f3f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 5px; /* Adds slight space between multiple buttons */
+    margin-bottom: 10px; /* Adds space from other elements */
+}
+
+.btn:hover {
+    background-color: #0059b3; /* Lighter navy blue on hover */
+}
+
+/* Specific button styling for DataTable */
+.dt-button {
+    background-color: #001f3f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dt-button:hover {
+    background-color: #0059b3; /* Lighter navy on hover */
+}
+
+/* Table row styles for active/inactive records */
+.table-success {
+    background-color: #c7ecc7; /* Light green for active records */
+}
+
+.table-danger {
+    background-color: #f0c6c6; /* Light red for inactive records */
+}
+
+/* Footer styling */
+footer {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 31, 63, 0.2); /* Navy shadow on top of the footer */
+    font-size: 14px; /* Slightly smaller text for the footer */
+}
+
+/* Responsive styling for smaller devices */
+@media (max-width: 768px) {
+    .navbar a {
+        display: block; /* Stack navbar links on small screens */
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .container-custom {
+        padding: 15px;
+    }
+
+    .form-control {
+        padding: 8px;
+    }
+
+    .table th, .table td {
+        padding: 10px;
+    }
+
+    input[type="submit"], button {
+        padding: 8px 15px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+    }
+}
+
+
